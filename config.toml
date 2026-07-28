@@ -1,4 +1,4 @@
-baseURL = "https://fcaj.NHThong23.com"
+baseURL = "http://NHThong23.github.io/fcaj-hcmut/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
