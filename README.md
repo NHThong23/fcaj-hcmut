@@ -280,4 +280,4 @@ This configuration:
 
 ## License
 
-Template content provided as reference — do not copy verbatim for your own report.
+Template content provided as reference — do not copy verbatim for your own report .
