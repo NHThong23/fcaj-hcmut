@@ -28,12 +28,18 @@ Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về t
 
 
 ### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
+- Điều bạn **hài lòng nhất** trong thời gian thực tập?
++ Điều mình hài lòng nhất là FCAJ không chỉ là nơi thực tập - đó còn là một cộng đồng. Mình được gặp gỡ, kết nối và học hỏi từ những người bạn đến từ nhiều trường đại học khác nhau trên khắp Việt Nam. Chính sự đa dạng về góc nhìn và tinh thần sẵn sàng chia sẻ ấy đã khiến kỳ thực tập của mình trở nên đặc biệt hơn rất nhiều.  
 - Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
++ Nhìn chung, công ty đã tạo điều kiện rất tốt cho thực tập sinh. Tuy nhiên, mình có một vài góp ý nhỏ: nên trang bị thêm khu vực nước uống miễn phí để mọi người có thể rót nước mà không cần phải ghi nhớ đi mua nước uống. Bên cạnh đó, việc mở cửa văn phòng thêm một số ngày trong tuần (thay vì chỉ giới hạn 2-3 buổi) sẽ giúp thực tập sinh có thêm thời gian làm việc trực tiếp, tận dụng tốt hơn cơ sở vật chất và tăng cường giao lưu với team.
 - Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
++ Chắc chắn là có. FCAJ là môi trường lý tưởng cho những bạn sinh viên muốn trải nghiệm thực tế trong ngành công nghệ - đặc biệt là những ai quan tâm đến cloud computing và hệ sinh thái AWS. Ở đây, bạn không chỉ được học từ mentor giàu kinh nghiệm, mà còn được kết nối với một cộng đồng sinh viên năng động, tham gia các sự kiện workshop miễn phí hằng tháng, và quan trọng nhất là được trao quyền tự do thử nghiệm, mắc lỗi và trưởng thành. Mình tin rằng sau kỳ thực tập này, bất kỳ ai cũng sẽ ra đi với một phiên bản tốt hơn của chính mình.
 
 
 ### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
+- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?
++ Ngoài những góp ý đã đề cập ở trên, mình nghĩ chương trình sẽ hoàn thiện hơn nếu có một buổi định hướng (onboarding) ngắn vào ngày đầu tiên để thực tập sinh nắm rõ lộ trình, đầu việc và các kênh hỗ trợ. Ngoài ra, việc tổ chức các buổi check-in định kỳ (ví dụ mỗi 2 tuần) giữa mentor và thực tập sinh sẽ giúp theo dõi tiến độ sát sao hơn và kịp thời tháo gỡ khó khăn trước khi chúng trở thành rào cản lớn.  
 - Bạn có muốn tiếp tục chương trình này trong tương lai?
++ Những gì mình nhận được từ FCAJ - kiến thức, kỹ năng, mối quan hệ và cả sự tự tin đã vượt xa kỳ vọng ban đầu. Nếu có cơ hội, mình rất mong được quay lại với một vai trò cao hơn, có thể là mentor cho thế hệ thực tập sinh tiếp theo, để vừa học hỏi thêm vừa đóng góp lại cho cộng đồng đã giúp đỡ mình rất nhiều.
 - Góp ý khác (tự do chia sẻ):
++ Không
