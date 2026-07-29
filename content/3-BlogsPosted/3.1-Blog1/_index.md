@@ -1,11 +1,13 @@
 ---
-title: '"The Dynamic Duo" - AWS Glue & Amazon Athena: When ETL Meets Query Engine on a Data Lake'
+title: 'Blog 1'
 date: 2026-07-29
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 includeInReport: false
 ---
+# THE DYNAMIC DUO" - AWS GLUE & AMAZON ATHENA: WHEN ETL MEETS QUERY ENGINE ON A DATA LAKE
+
 > *"Data sitting in S3 without the ability to query it is like a gold mine without a key."*
 
 **Hello everyone,**
@@ -17,9 +19,13 @@ If you're building a Data Lake on AWS, you've likely come across two names: **AW
 
 **AWS Glue** is a fully managed serverless ETL (Extract – Transform – Load) service. Simply put, Glue helps you discover data structures, transform raw data into a clean, optimized format, and load it into your target storage.
 
+![What is AWS Glue](/images/3-BlogsPosted/3.1-Blog1/aws-glue-la-gi.jpg)
+
 ## Amazon Athena — "The Serverless Query Engine"
 
 **Amazon Athena** is a serverless interactive query service that lets you analyze data directly on Amazon S3 using **standard SQL**, powered by the **Trino** engine (formerly known as Presto).
+
+![Amazon Athena Architecture](/images/3-BlogsPosted/3.1-Blog1/athena.png)
 
 ## Why Are They "The Dynamic Duo"?
 

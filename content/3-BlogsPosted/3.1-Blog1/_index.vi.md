@@ -1,11 +1,13 @@
 ---
-title: '"Cặp Đôi Song Trùng" - AWS Glue & Amazon Athena: Khi ETL gặp Query Engine trên Data Lake'
+title: 'Blog 1'
 date: 2026-07-29
 weight: 1
 chapter: false
 pre: " <b> 3.1. </b> "
 includeInReport: false
 ---
+# "CẶP ĐÔI SONG TRÙNG" - AWS GLUE & AMAZON ATHENA: KHI ETL GẶP QUERY ENGINE TRÊN DATA LAKE.
+
 > *"Dữ liệu nằm trên S3 mà không query được thì cũng như kho vàng mà không có chìa khóa."*
 
 **Xin chào mọi người,**
@@ -17,9 +19,13 @@ Nếu bạn đang xây dựng một Data Lake trên AWS, chắc hẳn bạn đã
 
 **AWS Glue** là dịch vụ ETL (Extract - Transform - Load) serverless được quản lý hoàn toàn bởi AWS. Nói đơn giản, Glue giúp bạn khám phá cấu trúc dữ liệu, chuyển đổi dữ liệu thô sang dạng sạch và tối ưu, rồi tải vào nơi lưu trữ đích.
 
+![AWS Glue là gì?](/images/3-BlogsPosted/3.1-Blog1/aws-glue-la-gi.jpg)
+
 ## Amazon Athena - "Người truy vấn không cần server"
 
 **Amazon Athena** là dịch vụ interactive query serverless cho phép bạn phân tích dữ liệu trực tiếp trên Amazon S3 bằng **SQL chuẩn**, dựa trên engine **Trino** (trước đây gọi là Presto).
+
+![Kiến trúc Amazon Athena](/images/3-BlogsPosted/3.1-Blog1/athena.png)
 
 ## Tại sao là "Cặp đôi song trùng"?
 

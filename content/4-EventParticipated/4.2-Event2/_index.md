@@ -1,126 +1,97 @@
 ---
 title: "Event 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
-
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: "FCAJ Community Day June 2026: Experience-sharing session on a comprehensive topic"
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- **Practical DevOps Insights:** Discover the day-to-day responsibilities, mindset, and essential skills required of a DevOps Engineer.
+- **Hands-On System Design:** Learn solution design methods and technical approaches to building a URL shortener service.
+- **Journey to AWS Partnership:** Hear key lessons and growth strategies on evolving from FCAJ into an official AWS Partner.
+- **Navigating Multinational Cultures:** Gain real-world perspectives on adapting and thriving in a multinational corporate environment.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Trong H. Truong:** DevOps Engineer @ Endava Vietnam.
+- **Trung Kien Dinh:** Lead Developer at startup & **Minh Tho Nguyen:** Student.
+- **Hoang Hieu Nghi Danh:** AI Engineer – AWS Community Builder – AWS Student Builder Group Leader.
+- **Dat Pham:** Data Analytics Engineer & **Cuong Nguyen:** Process Engineer.
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### A Comprehensive Overview of a DevOps Engineer
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Comparing how DevOps is perceived from the "outside" (merely handling infrastructure and deployment support) versus the actual work from the inside.
+- Sharing the speaker's self-learning path and practical roadmap to advancing DevOps skills.
+- Valuable experiences and standards that define a truly exceptional DevOps engineer.
 
-#### Transitioning to modern application architecture – Microservices
+#### Building a URL Shortener Service with Serverless Architecture on AWS
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Resolving the inconvenience of sharing long, cumbersome links.
+- Optimizing and building a URL shortener application by combining AWS Serverless services such as Lambda, CloudFront, WAF, and more.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Journey of Impact: From FCAJ Member to AWS Partner
 
-#### Domain-Driven Design (DDD)
+- Milestones from starting as an FCAJ participant, landing the first job, and taking those initial steps.
+- Becoming a key contributor in the AWS Student Builder Group, connecting with and guiding students.
+- Elevating oneself by joining the AWS Community Builder program and progressively rising to become an AWS Partner.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Data Analyst Stories: From Real-World Practice to Corporate Culture in Multinational Corporations
 
-#### Event-Driven Architecture
-
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
-
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- Analyzing the differences in the role of a Data Analyst across two distinct environments: Kamereo (a startup) and Colgate-Palmolive (a multinational corporation).
+- Frameworks for cultivating core thinking skills to flexibly adapt to different business models.
+- Deep perspectives on corporate culture and the positioning of data professionals in the modern era.
 
 ### Key Takeaways
 
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- **DevOps:** Systems thinking and mastering processes matter more than just operating infrastructure tools.
+- **URL Shortener (AWS):** Optimizing user experience begins with addressing the smallest needs using a lean, flexible tech architecture.
+- **Growth Journey:** Sustainable career advancement stems from continuously creating value for the community and proactively building connections.
+- **Data Analyst:** Success lies in an adaptable mindset to solve exact business problems and navigate the unique corporate culture of each company model.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **DevOps (Process & Systems Thinking):** Before picking or deploying a new tool, ask yourself: "Where is the actual bottleneck in our current pipeline?" Focus on automating and standardizing the process first, then select the tools that best fit that flow.
+- **Serverless (Solving Niche Problems Leanly):** Avoid over-engineering a massive architecture upfront. Identify a small user or team pain point, deploy a quick, cost-effective serverless prototype, and iterate based on real feedback.
+- **Growth Journey (Impact & Networking):** Continuously share your knowledge. Generating value for your community and proactively networking is the most effective way to unlock new career opportunities.
+- **Data Analyst (Mindset & Culture Fit):** Align your analysis with the specific business goals and cultural norms of the company. Data becomes actionable only when it addresses what decision-makers truly care about in a language they understand.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending this event was a truly practical and inspiring experience, helping me gain deeper insights ranging from hands-on engineering and cloud technology solutions to career development and corporate culture. Here are the key highlights:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from Industry Experts
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- Gained a clear, realistic picture of a DevOps Engineer's role - bridging the gap between external misconceptions and the actual daily responsibilities.
+- Absorbed a self-learning roadmap, practical skill-building strategies, and key standards to master the field from seasoned speakers.
+- Learned immensely from a Senior Data Analyst sharing real-world corporate experiences.
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Hands-On Technical Experience
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Explored real-world problem-solving by addressing the inconvenience of handling long, cumbersome URLs.
+- Learned how to design and optimize a complete link-shortening service using Serverless architecture.
+- Analyzed how compute, content delivery, and security services work together to achieve optimal system performance.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Applying Modern Tools
 
-#### Some event photos
-*Add your event photos here*  
+- Directly explored the AWS Serverless ecosystem, leveraging tools such as AWS Lambda, Amazon CloudFront, and AWS WAF.
+- Understood how to apply modern cloud tools to real-world scenarios to boost automation, improve performance, and ensure application security.
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+#### Networking and Community Connection
+
+- Recognized the power of community engagement through an inspiring growth journey: starting as an FCAJ member finding a first job, contributing to the AWS Student Builder Group, advancing to AWS Community Builder, and ultimately becoming an AWS Partner.
+- Connected and exchanged ideas with speakers and peers to learn about organizational culture and the evolving role of tech/data professionals today.
+
+#### Key Takeaways
+
+- Mastering specialized roles (like DevOps or Data) requires a structured self-learning path, practical expertise, and a core mindset adaptable to any business model.
+- Leveraging modern Serverless tools is an effective way to solve practical engineering challenges efficiently.
+- Actively giving back to and growing within tech communities serves as a powerful catalyst for personal growth and major career milestones.
+
+### Event Photos
+
+![Event 2](/images/4-EventParticipated/4.2-Event2/Event2.png)

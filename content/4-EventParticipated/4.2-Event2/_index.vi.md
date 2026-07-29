@@ -1,125 +1,95 @@
 ---
-title: "Event 2"
+title: "Sự kiện 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
+# Bài thu hoạch "Ngày hội cộng đồng FCAJ (Tháng 6/2026): Buổi chia sẻ kinh nghiệm với đề tài tổng hợp"
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+### Mục đích của sự kiện
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+- **Góc nhìn thực tế về DevOps:** Khám phá chi tiết công việc hàng ngày, tư duy và kỹ năng cần có của một DevOps Engineer.
+- **Thực hành bài toán System Design:** Bỏ túi phương pháp kiến tạo giải pháp và kỹ thuật xây dựng dịch vụ rút gọn link (URL Shortener).
+- **Hành trình vươn tầm đối tác AWS:** Lắng nghe bài học kinh nghiệm và chiến lược phát triển từ bước khởi đầu tại FCAJ đến khi trở thành AWS Partner.
+- **Hành trang hòa nhập tập đoàn đa quốc gia:** Lắng nghe những câu chuyện "người thật việc thật" về cách thích nghi và phát triển trong môi trường đa văn hóa.
 
-### Mục Đích Của Sự Kiện
+### Danh sách diễn giả
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- **Trương H. Trọng:** Kỹ sư DevOps làm việc tại Endava Vietnam.
+- **Đinh Trung Kiên:** Lead Developer tại startup & **Nguyễn Minh Thọ:** Sinh viên.
+- **Danh Hoàng Hiếu Nghị:** Kỹ sư trí tuệ nhân tạo – Thành viên phát triển cộng đồng AWS – Trưởng nhóm Cộng đồng Sinh viên AWS Student Builder.
+- **Đạt Phạm:** Kỹ sư phân tích dữ liệu & **Cường Nguyễn:** Kỹ sư Quy trình.
 
-### Danh Sách Diễn Giả
+### Nội dung nổi bật
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+#### Kỹ sư DevOps thường làm gì
 
-### Nội Dung Nổi Bật
+- So sánh sự khác biệt giữa hình ảnh DevOps trong mắt "người ngoài" (chỉ làm hạ tầng, hỗ trợ triển khai) và thực tế công việc của người trong cuộc.
+- Chia sẻ lộ trình tự học và nâng cao kỹ năng DevOps thực chiến của chính diễn giả.
+- Những trải nghiệm đắt giá và tiêu chuẩn định hình nên một kỹ sư DevOps thực sự giỏi.
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Xây dựng dịch vụ rút gọn liên kết với kiến trúc Serverless trên AWS
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+- Giải quyết bất tiện khi chia sẻ các đường dẫn dài, cồng kềnh.
+- Tối ưu hóa và hoàn thiện ứng dụng rút gọn liên kết bằng cách kết hợp các dịch vụ Serverless trên AWS như Lambda, CloudFront, WAF, ...
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+#### Hành trình cống hiến: Từ thành viên FCAJ đến Đối tác AWS (AWS Partner)
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+- Cột mốc từ người tham gia FCAJ, tìm được công việc đầu tiên và những bước đi chập chững ban đầu.
+- Trở thành nhân tố trong AWS Student Builder Group, kết nối và đồng hành cùng thế hệ sinh viên.
+- Nâng tầm bản thân khi gia nhập AWS Community Builder và từng bước vươn lên trở thành AWS Partner.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Câu chuyện thực tế đến văn hóa tại tập đoàn đa quốc gia dưới góc nhìn của một kỹ sư phân tích dữ liệu
 
-#### Domain-Driven Design (DDD)
+- Phân tích sự khác biệt trong công việc của một Kỹ sư Phân tích Dữ liệu (Data Analyst) tại hai môi trường đặc thù: Kamereo (Startup) và Colgate-Palmolive (Tập đoàn đa quốc gia).
+- Phương pháp rèn luyện bộ kỹ năng tư duy cốt lõi để linh hoạt thích nghi với từng mô hình doanh nghiệp.
+- Nhìn nhận sâu sắc về văn hóa doanh nghiệp và vị thế của người làm dữ liệu trong kỷ nguyên hiện đại.
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+### Những gì học được
 
-#### Event-Driven Architecture
+- **DevOps:** Tư duy hệ thống và khả năng làm chủ quy trình quan trọng hơn việc chỉ biết vận hành công cụ hạ tầng.
+- **URL Shortener (AWS):** Tối ưu hóa trải nghiệm người dùng bắt đầu từ việc giải quyết nhu cầu nhỏ nhất bằng kiến trúc công nghệ tinh gọn, linh hoạt.
+- **Hành trình phát triển:** Sự thăng tiến bền vững đến từ việc không ngừng tạo ra giá trị cho cộng đồng và chủ động mở rộng kết nối.
+- **Data Analyst:** Thành công nằm ở tư duy linh hoạt để giải quyết đúng bài toán kinh doanh và chủ động thích nghi với văn hóa đặc thù của từng doanh nghiệp.
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+### Ứng dụng vào công việc
 
-#### Compute Evolution
+- **DevOps (Tư duy quy trình):** Trước khi chọn hay cài đặt một công cụ mới (như Kubernetes, Terraform, Jenkins), hãy tự hỏi: "Quy trình hiện tại đang tắc nghẽn ở đâu?" Tận dụng tự động hóa để chuẩn hóa quy trình trước, rồi mới chọn công cụ phù hợp.
+- **Serverless (Giải quyết bài toán nhỏ):** Đừng cố xây dựng một hệ thống quá cồng kềnh ngay từ đầu. Hãy bắt đầu bằng cách tìm một điểm đau nhỏ của người dùng hoặc team, dùng kiến trúc phi máy chủ để dựng giải pháp nhanh, chi phí thấp và tối ưu dần dựa trên phản hồi thực tế.
+- **Hành trình phát triển (Kết nối & Chia sẻ):** Chủ động chia sẻ kiến thức và kết nối với các cộng đồng chuyên môn. Việc tạo ra giá trị cho người khác chính là cách nhanh nhất để khẳng định năng lực và mở ra cơ hội thăng tiến cho bản thân.
+- **Data Analyst (Tư duy & Văn hóa):** Khi phân tích dữ liệu, hãy tìm hiểu kỹ ngữ cảnh kinh doanh và "luật chơi" văn hóa của doanh nghiệp. Dữ liệu chỉ thực sự có giá trị khi nó trả lời đúng bài toán lãnh đạo đang quan tâm và được truyền tải bằng ngôn ngữ họ hiểu.
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+### Trải nghiệm tại sự kiện
 
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Sự kiện lần này là một trải nghiệm rất thiết thực và giàu cảm hứng, giúp tôi mở rộng góc nhìn từ thực tế công việc kỹ thuật, giải pháp công nghệ trên cloud cho đến hành trình phát triển sự nghiệp và môi trường doanh nghiệp. Một số trải nghiệm nổi bật:
 
 #### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+
+- Hiểu rõ hơn về vai trò thực sự của một Kỹ sư DevOps - không chỉ đơn thuần là vận hành hạ tầng mà còn là tư duy hệ thống và khả năng làm chủ quy trình.
+- Tiếp thu lộ trình tự học DevOps thực chiến và những tiêu chuẩn định hình nên một kỹ sư DevOps giỏi từ diễn giả giàu kinh nghiệm.
 
 #### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+
+- Tìm hiểu cách giải quyết bài toán rút gọn link (URL Shortener) - một nhu cầu tưởng nhỏ nhưng có thể mở ra tư duy thiết kế hệ thống lớn.
+- Học cách kết hợp các dịch vụ Serverless như Lambda, CloudFront và WAF để tối ưu hiệu năng và bảo mật cho ứng dụng.
 
 #### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+
+- Tiếp cận hệ sinh thái Serverless của AWS, tận dụng các công cụ như AWS Lambda, Amazon CloudFront và AWS WAF vào giải quyết bài toán kỹ thuật thực tế.
+- Hiểu cách áp dụng công cụ đám mây hiện đại để tăng tốc độ triển khai, cải thiện hiệu năng và đảm bảo an toàn cho ứng dụng.
 
 #### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+
+- Nhận thức được sức mạnh của cộng đồng qua hành trình truyền cảm hứng: từ thành viên FCAJ tìm được việc làm đầu tiên, đến AWS Student Builder, Community Builder và cuối cùng là AWS Partner.
+- Giao lưu, trao đổi với diễn giả và đồng nghiệp về văn hóa doanh nghiệp và vai trò của người làm dữ liệu trong thời đại mới.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+- Làm chủ các vai trò chuyên môn (DevOps, Data) đòi hỏi lộ trình tự học có cấu trúc, kinh nghiệm thực tế và tư duy linh hoạt thích ứng với từng mô hình doanh nghiệp.
+- Tận dụng công cụ Serverless hiện đại là cách hiệu quả để giải quyết các bài toán kỹ thuật một cách tinh gọn.
+- Chủ động đóng góp và phát triển trong cộng đồng công nghệ là chất xúc tác mạnh mẽ cho sự phát triển cá nhân và các cột mốc sự nghiệp quan trọng.
+
+### Hình ảnh minh chứng
+
+![Event 2](/images/4-EventParticipated/4.2-Event2/Event2.png)

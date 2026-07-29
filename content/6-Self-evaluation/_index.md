@@ -6,13 +6,8 @@ chapter: false
 pre: " <b> 6. </b> "
 includeInReport: false
 ---
-
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **Amazon Web Services Viet Nam Company Limited** from **June 1, 2026** to **August 15, 2026**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
+I participated in the **Student Management Website** project together with two other members, **Nguyen Cong Vinh** and **Nguyen Le Duc Phu**, through which I improved my skills in **programming, testing, communication, and time management**.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
 
@@ -21,20 +16,30 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
 | 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
+| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ✅    | ☐    | ☐       |
 | 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
 | 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
+| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ✅    | ☐    | ☐       |
 | 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
 | 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
 | 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
 | 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
+| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ✅    | ☐    | ☐       |
 | 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| 12  | **Cloud & DevOps skills**           | Familiarity with AWS services, CI/CD pipeline, Infrastructure as Code                           | ☐    | ✅    | ☐       |
+| 13  | **Emerging tech awareness**         | Proactively staying updated on trends: AI/ML, Serverless, Containerization, Voice AI             | ✅    | ☐    | ☐       |
+| 14  | **Self-learning ability**           | Self-directed research, hands-on labs, attending workshops/communities to upskill               | ☐    | ✅    | ☐       |
+| 15  | **Technical writing skills**        | Writing clear, well-structured blogs, tutorials, and event reports                               | ✅    | ☐    | ☐       |
+| 16  | **Community engagement**            | Attending meetups, seminars, community events; contributing knowledge to the collective          | ✅    | ☐    | ☐       |
+| 17  | **Time management & prioritization**| Ability to prioritize tasks by importance and meet deadlines consistently                        | ✅    | ☐    | ☐       |
+| 18  | **Adaptability**                    | Quickly adapting to new environments, tools, and workflows                                       | ✅    | ☐    | ☐       |
+| 19  | **Security awareness**              | Understanding of information security, following best practices when handling data & systems     | ✅    | ☐    | ☐       |
+| 20  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
 
 ### Needs Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* **Progressive mindset:** Be more proactive in seeking feedback from supervisors and colleagues, turning each suggestion into concrete improvement actions rather than passively receiving input.
+* **Communication:** Sharpen the ability to present ideas clearly and concisely in team meetings; improve professional email writing and work reporting skills in English.
+* **Cloud & DevOps skills:** Increase hands-on practice with core AWS services (Lambda, DynamoDB, S3, CloudFront, WAF) and gain familiarity with CI/CD pipelines (GitHub Actions, AWS CodePipeline) and Infrastructure as Code (Terraform/CDK).
+* **Self-learning ability:** Build a more structured self-learning roadmap, combining theory (reading official documentation) with hands-on practice (labs, personal projects) to enhance knowledge retention.
+* Enhance technical writing skills for reports and knowledge-sharing blog posts

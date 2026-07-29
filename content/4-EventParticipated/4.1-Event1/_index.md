@@ -5,122 +5,107 @@ weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
-
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
-
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: "FCAJ Community Day June 2026: Experience-sharing session on a comprehensive topic"
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- **Master the Fundamentals:** Gain a comprehensive overview and practical applications of Docker in system deployment.
+- **Upgrade Security:** Learn how to combine Machine Learning with AWS WAF to proactively defend against cyberattacks.
+- **Career Roadmap:** Discover actionable insights and the transition journey from IT Helpdesk to System Administrator (SysAdmin).
+- **Real-World Applications:** Explore optimized AWS deployment solutions tailored for the Game Development industry.
+- **Community Connection:** Engage in interactive activities to foster and enhance teamwork skills.
+- **Scale AI Solutions:** Discover how to integrate Amazon Bedrock with Amazon Neptune to build next-generation GraphRAG applications.
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Huynh Nguyen Quoc Bao:** Junior Cloud Native Developer - Endava Vietnam; Founder / Head Lab - ITea Lab.
+- **Le Hoang Gia Dai:** Senior student of Ho Chi Minh City University of Technology (HUTECH).
+- **Tran Trung Vinh:** System administrator at Central Retail Group.
+- **Nguyen Quoc Bao:** Studying at Swinburne University of Technology.
+- **Truong Huy Phuoc:** NULL
+- **Viet Phat:** Studying AI Major at Swinburne University of Technology.
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Docker Fundamentals
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- Core concepts & why Docker has become a modern industry standard.
+- Key advantages of Docker over Virtual Machines (VMs).
+- Real-world applications, essential commands, and a live containerized app demo.
 
-#### Transitioning to modern application architecture – Microservices
+#### Enhancing AWS WAF with Machine Learning
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Limitations of traditional AWS WAF relying on predefined rules and "textbook" attack patterns.
+- Machine Learning in action: Selecting suitable datasets and model architectures.
+- Practical steps for leveraging ML to detect and mitigate real-world cyberattacks.
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Career Journey: From IT Support to System Administrator
 
-#### Domain-Driven Design (DDD)
+- A non-traditional entry into tech without an IT degree.
+- Pivot points to successfully transition into System Administration.
+- Fresh perspectives on job opportunities and career growth in IT.
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### Game Development Demystified: It's Only Hard Until You Explore It
 
-#### Event-Driven Architecture
+- Overview of game genres and optimal programming methodologies.
+- In-depth analysis of multiplayer game development techniques.
+- Interactive demo of live game programming.
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+#### Teamwork: Beyond Strategy, It's an Art
 
-#### Compute Evolution
+- Comparing teamwork mindsets and dynamics: Vietnam vs. Japan.
+- 4 golden rules to boost team performance.
+- Recommended infrastructure and tools to foster efficient collaboration.
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+#### Building GraphRAG with Amazon Bedrock and Neptune
 
-#### Amazon Q Developer
-
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+- The fundamentals of Retrieval-Augmented Generation (RAG) and its current technical bottlenecks.
+- Breakthrough with GraphRAG: Enhancing knowledge retrieval for Generative AI.
 
 ### Key Takeaways
 
-#### Design Mindset
+#### A new direction
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+- Completely eliminate the story of "it works on my machine but fails on yours." With Docker, the deployment experience becomes simpler and more consistent than ever - just open the container and run.
+- Don't let the false sense of security from default configurations fool you. AWS WAF or traditional protection layers can be completely bypassed by just a few subtle tweaks from an attacker. Information security demands a proactive mindset and continuous adaptability.
 
-#### Technical Architecture
+#### A new perspective
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+- Move away from the "mind your own business" mentality toward strategic connection and coordination.
+- Unemployment or stagnation is sometimes not because we lack knowledge, but because we haven't yet learned how to connect, learn, and turn what we have into real value.
 
-#### Modernization Strategy
+#### A new picture
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- You don't need heavy machinery to get started. Even classic ideas or widely spread games can be initiated from the leanest lines of code if you have the right mindset.
+- No technology is absolutely perfect. Clearly identifying the technical bottlenecks of traditional RAG is the turning point to unlocking the power of GraphRAG in processing complex knowledge.
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Docker & Containerization:** Package applications to ensure smooth execution on any machine without environment errors or operating system differences.
+- **Machine Learning for AWS WAF:** Automatically detect and block emerging cyber attack techniques (Zero-day) that static rule sets haven't yet been updated to handle.
+- **AgenticOps / AWS DevOps Agent:** An AI-powered assistant that autonomously monitors Cloud systems 24/7 and alerts/handles infrastructure incidents on behalf of humans.
+- **GraphRAG (Bedrock + Neptune):** An AI-powered assistant for enterprise document retrieval, capable of connecting complex data into accurate answers without hallucinating information.
+- **Multiplayer Game Programming:** Build a connection infrastructure that enables multiple players to interact with each other in the same game room in real time.
+- **Teamwork Skills:** Standardize work coordination processes to minimize conflicts and accelerate project handoffs in multinational companies.
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Just wrapped up an incredible session at the event. I am genuinely energized by the practical, hands-on insights shared by our speakers. The event delivered a fantastic mix of deep-tech engineering concepts and fresh perspectives on operations, teamwork, and career growth.
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+Here are some of the most valuable takeaways I gathered from the sessions:
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### On Technology & Operations
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+- **Docker Fundamentals:** The true power of containerization goes beyond just packaging code — it completely eliminates the classic "it works on my machine" dilemma by standardizing environments.
+- **Enhancing AWS WAF with ML:** A wake-up call that static rules are no longer enough against sophisticated, evolving cyberattacks. Integrating Machine Learning is becoming essential for catching real-world zero-day threats automatically.
+- **AgenticOps & AWS DevOps Agent:** A glimpse into the future with an always-on "AI operations teammate" that assists with cloud infrastructure management, incident handling, and FinOps optimization.
+- **GraphRAG (Bedrock + Neptune):** Breaking past the limitations of traditional RAG by combining Knowledge Graphs to drastically improve complex enterprise data retrieval and reduce hallucinations.
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### On People & Growth
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+- **Teamwork Dynamics:** Appreciating cultural differences in collaboration and learning the four golden rules to maximize team efficiency in multi-cultural environments.
+- **Career Journey:** An inspiring story from IT Support to System Administrator. It made me realize that unemployment or career stagnation isn't always about a lack of knowledge, but rather how we connect, learn, and apply what we already have into real value.
 
-#### Some event photos
-*Add your event photos here*  
+### Event Photos
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![Event 1](/images/4-EventParticipated/4.1-Event1/Event1.png)
