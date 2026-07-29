@@ -55,14 +55,14 @@
                   value="{{ $translation.Permalink }}"
                   selected
                 >
-                  {{ .Label }}
+                  {{ or .Label .LanguageName }}
                 </option>
                 {{ else }}
                 <option
                   id="{{ $translation.Language }}"
                   value="{{ $translation.Permalink }}"
                 >
-                  {{ .Label }}
+                  {{ or .Label .LanguageName }}
                 </option>
                 {{ end }} {{ end }} {{ end }} {{ end }}
               </select>
