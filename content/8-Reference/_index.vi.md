@@ -11,10 +11,10 @@ includeInReport: false
 
 | Thành phần | Mô tả | Liên kết |
 |-----------|-------|----------|
-| 🖥️ **Frontend** | Giao diện người dùng | [TTNT-frontend](https://github.com/vinhnguyencong2005/TTNT-frontend) |
-| ⚙️ **Backend** | API & xử lý nghiệp vụ | [TTNT-backend](https://github.com/vinhnguyencong2005/TTNT-backend) |
-| ☁️ **Hạ tầng AWS** | Thiết lập cloud infrastructure | *(đang cập nhật)* |
+| **Frontend** | Giao diện người dùng | [TTNT-frontend](https://github.com/vinhnguyencong2005/TTNT-frontend) |
+| **Backend** | API & xử lý nghiệp vụ | [TTNT-backend](https://github.com/vinhnguyencong2005/TTNT-backend) |
+| **Hạ tầng AWS** | Thiết lập cloud infrastructure | [TTNT-IaC](https://github.com/vinhnguyencong2005/TTNT-IaC)|
 
 ### Video demo
 
-🎬 **Xem demo dự án:** [YouTube](https://youtu.be/Y8wIQDmBq-Q?si=thYkUBnb_RmP0NWC) 
+**Xem demo dự án:** [YouTube](https://youtu.be/Y8wIQDmBq-Q?si=thYkUBnb_RmP0NWC) 
