@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.8. </b> "
 ---
 
-Tự động hóa giúp các cập nhật code được triển khai mượt mà lên môi trường sản xuất. Trong phần này, chúng ta cấu hình các GitHub Repository Secrets và tìm hiểu cách kích hoạt quy trình CI/CD tự động cho cả **Frontend (AWS Amplify)** và **Backend (EC2 Auto Scaling Group)**.
+Tự động hóa giúp các cập nhật code được triển khai mượt mà lên môi trường sản xuất. Trong phần này, tiến hành cấu hình các GitHub Repository Secrets và tìm hiểu cách kích hoạt quy trình CI/CD tự động cho cả **Frontend (AWS Amplify)** và **Backend (EC2 Auto Scaling Group)**.
 
 ---
 
@@ -26,7 +26,8 @@ Trước khi chạy các workflow, hãy thêm AWS Credentials và các endpoint 
 | `AMPLIFY_APP_ID` | Giá trị lấy từ `terraform output amplify_app_id` |
 | `VITE_API_BASE_URL` | Giá trị lấy từ `terraform output backend_api_url` (API Gateway HTTPS) |
 
-![github secrets](/images/5-Workshop/5.8/1.png)
+![github secrets frontend](/images/5-Workshop/5.8/1.png)
+![github secrets backend](/images/5-Workshop/5.8/2.png)
 
 {{% notice tip %}}
 Đảm bảo `VITE_API_BASE_URL` trỏ chính xác đến **URL HTTPS API Gateway** (`https://<api-id>.execute-api.us-east-1.amazonaws.com`) để tránh lỗi Mixed Content trên trình duyệt.
@@ -63,7 +64,8 @@ git commit -m "Update application code"
 git push origin main
 ```
 
-![git push trigger](/images/5-Workshop/5.8/2.png)
+![workflow frontend](/images/5-Workshop/5.8/3.png)
+![workflow backend](/images/5-Workshop/5.8/4.png)
 
 ---
 
@@ -79,18 +81,17 @@ Bạn cũng có thể khởi chạy deploy thủ công bất kỳ lúc nào tr�
 4. Nhấp vào nút **Run workflow** bên phải.
 5. Chọn nhánh **`main`** và nhấp **Run workflow**.
 
-![manual trigger](/images/5-Workshop/5.8/3.png)
-
 ---
 
 #### Bước 4: Theo dõi và Kiểm tra Deploy
 
 1. Nhấp vào lượt chạy workflow đang hoạt động trong tab **Actions** để xem chi tiết log thời gian thực.
-2. Khi tiến trình hoàn tất với màu xanh (✅ **Success**), kiểm tra ứng dụng:
+2. Khi tiến trình hoàn tất, kiểm tra ứng dụng:
    - Mở app frontend: `https://main.<app-id>.amplifyapp.com`
    - Kiểm tra API health: `curl -s https://<api-id>.execute-api.us-east-1.amazonaws.com/health`
 
-![workflow success](/images/5-Workshop/5.8/4.png)
+![frontend UI](/images/5-Workshop/5.8/5.png)
+![backend health](/images/5-Workshop/5.8/6.png)
 
 ---
 

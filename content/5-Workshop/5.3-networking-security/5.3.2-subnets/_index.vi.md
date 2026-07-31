@@ -6,15 +6,15 @@ chapter : false
 pre : " <b> 5.3.2. </b> "
 ---
 
-#### Six Subnets, Three Tiers
+#### Sáu Subnets, Ba Tầng
 
-Six subnets across two AZs, organized into three tiers. Each tier has one subnet per AZ so the application survives a single-AZ failure:
+Sáu subnets trải dài trên hai AZs, được tổ chức thành ba tầng. Mỗi tầng có một subnet trên mỗi AZ giúp hệ thống duy trì hoạt động khi một AZ gặp sự cố:
 
-If `us-east-1a` fails, everything in `us-east-1b` keeps running.
+Nếu `us-east-1a` bị gián đoạn, toàn bộ dịch vụ trên `us-east-1b` vẫn tiếp tục hoạt động.
 
-#### Public — for the ALB and NAT Gateways
+#### Public Subnets — Dành cho ALB và NAT Gateways
 
-The only distinction from private subnets: `map_public_ip_on_launch = true`.
+Điểm khác biệt duy nhất so với private subnets: `map_public_ip_on_launch = true`.
 
 ```hcl
 resource "aws_subnet" "public_1" {
@@ -44,9 +44,9 @@ resource "aws_subnet" "public_2" {
 }
 ```
 
-#### Private App — for EC2 instances
+#### Private App Subnets — Dành cho các máy chủ EC2
 
-No `map_public_ip_on_launch` — instances get no public IP. Outbound internet goes through NAT Gateways; the internet cannot initiate connections inbound.
+Không có `map_public_ip_on_launch` — máy chủ không được cấp IP công khai. Lưu lượng outbound ra internet đi qua NAT Gateways; internet không thể chủ động kết nối vào các máy chủ này.
 
 ```hcl
 resource "aws_subnet" "private_1" {
@@ -76,9 +76,9 @@ resource "aws_subnet" "private_2" {
 }
 ```
 
-#### Private DB — for RDS and Redis
+#### Private DB Subnets — Dành cho RDS và Redis
 
-Deepest isolation. No internet in either direction. The `Tier = "db"` tag is used later by RDS and ElastiCache subnet groups to select these subnets.
+Mức độ cô lập cao nhất. Không kết nối internet hai chiều. Tag `Tier = "db"` được dùng sau đó cho RDS và ElastiCache subnet groups để chọn đúng các subnets này.
 
 ```hcl
 resource "aws_subnet" "private_3" {

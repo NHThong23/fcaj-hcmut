@@ -1,6 +1,6 @@
 ---
 title: "Nhật ký Tuần 8"
-date: 2026-08-07
+date: 2026-08-14
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "

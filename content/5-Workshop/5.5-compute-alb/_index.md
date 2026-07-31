@@ -24,6 +24,7 @@ Three components work together to run and expose the application:
 | **SSM VPC Endpoints** | Enable Session Manager access to EC2 without SSH or bastion hosts |
 | **Auto Scaling Group** | Maintains 2–4 instances across two AZs, replaces unhealthy ones, distributes across private app subnets |
 | **Application Load Balancer** | Single internet-facing entry point, forwards HTTP :80 → EC2 :3000, health checks at `/health` |
+| **API Gateway HTTP API** | Managed HTTPS proxy for the ALB, eliminating browser Mixed Content errors |
 
 #### Content
 
@@ -31,5 +32,4 @@ Three components work together to run and expose the application:
 2. [SSM VPC Endpoints](5.5.2-ssm-endpoints/) — Shell access without SSH
 3. [Auto Scaling Group](5.5.3-asg/) — 2–4 instances across two AZs
 4. [Application Load Balancer](5.5.4-alb/) — Internet-facing entry point with health checks
-
----
+5. [API Gateway HTTP API](5.5.5-apigateway/) — HTTPS endpoint for ALB, resolving Mixed Content issues

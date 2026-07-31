@@ -1,12 +1,12 @@
 ---
-title : "Giám sát"
+title : "Giám sát & Cảnh báo (Monitoring)"
 date : 2024-01-01
 weight : 6
 chapter : false
 pre : " <b> 5.6. </b> "
 ---
 
-Một chủ đề SNS + ba cảnh báo CloudWatch bao phủ từng tầng có thể gặp sự cố. Khi một cảnh báo kích hoạt, nó sẽ gửi thông báo đến chủ đề SNS — đăng ký email hoặc webhook để nhận cảnh báo.
+Một SNS topic kết hợp với ba CloudWatch alarms bao phủ từng tầng hạ tầng có nguy cơ gặp sự cố. Khi một alarm kích hoạt, thông báo sẽ được xuất bản đến SNS topic — hỗ trợ đăng ký email hoặc webhook để nhận thông báo thời gian thực.
 
 #### SNS Topic
 
@@ -17,15 +17,15 @@ resource "aws_sns_topic" "alarms" {
 }
 ```
 
-#### Alarms
+#### Các Cảnh báo (Alarms)
 
-| Alarm | Metric | Ngưỡng | Logic |
-|-------|--------|--------|-------|
-| `alb-5xx-errors` | `HTTPCode_Target_5XX_Count` | > 5 trong 2 chu kỳ 1 phút | Ứng dụng trả về lỗi cho người dùng |
-| `rds-cpu-high` | `CPUUtilization` | > 80% trong 2 chu kỳ 5 phút | Cơ sở dữ liệu đang chịu áp lực — cần mở rộng hoặc tối ưu truy vấn |
-| `asg-below-min-size` | `GroupTotalInstances` | < 2 trong 2 chu kỳ 5 phút | Máy chủ ảo (Instance) không khởi chạy được hoặc bị terminate |
+| Cảnh báo (Alarm) | Chỉ số (Metric) | Ngưỡng (Threshold) | Logic kiểm tra |
+|-------|--------|-----------|-------|
+| `alb-5xx-errors` | `HTTPCode_Target_5XX_Count` | > 5 trong 2 chu kỳ 1 phút | Ứng dụng trả về lỗi 5xx cho người dùng |
+| `rds-cpu-high` | `CPUUtilization` | > 80% trong 2 chu kỳ 5 phút | Cơ sở dữ liệu bị quá tải — cần tối ưu truy vấn hoặc nâng cấp máy chủ |
+| `asg-below-min-size` | `GroupTotalInstances` | < 2 trong 2 chu kỳ 5 phút | Máy chủ EC2 khởi động thất bại hoặc bị dừng bất thường |
 
-#### ALB 5xx
+#### 1. Cảnh báo Lỗi ALB 5xx
 
 ```hcl
 resource "aws_cloudwatch_metric_alarm" "alb_5xx" {
@@ -48,9 +48,9 @@ resource "aws_cloudwatch_metric_alarm" "alb_5xx" {
 }
 ```
 
-`treat_missing_data = "notBreaching"` — nếu ALB không có lưu lượng truy cập (do đó không có điểm dữ liệu 5xx), thì không có vấn đề gì. Chỉ kích hoạt báo động khi có dữ liệu vượt ngưỡng.
+Cấu hình `treat_missing_data = "notBreaching"` — nếu ALB không có lưu lượng (và do đó không phát sinh dữ liệu 5xx), trạng thái được coi là bình thường. Cảnh báo chỉ kích hoạt khi có dữ liệu thực tế vượt ngưỡng.
 
-#### RDS CPU
+#### 2. Cảnh báo Quá tải CPU RDS
 
 ```hcl
 resource "aws_cloudwatch_metric_alarm" "rds_cpu" {
@@ -73,9 +73,9 @@ resource "aws_cloudwatch_metric_alarm" "rds_cpu" {
 }
 ```
 
-CPU 80% duy trì trong 10 phút (2 × 5 phút). Với `db.t4g.micro` 2 vCPU, điều này có nghĩa cơ sở dữ liệu đang bị giới hạn CPU. Hướng xử lý: nâng cấp instance class hoặc thêm read replica.
+CPU duy trì ở mức 80% liên tục trong 10 phút (2 chu kỳ 5 phút). Với cấu hình `db.t4g.micro`, điều này cho thấy cơ sở dữ liệu đang đạt tới giới hạn CPU. Phương án xử lý: nâng cấp cấu hình máy chủ hoặc thêm read replica.
 
-#### ASG Dưới Mức Tối Thiểu
+#### 3. Cảnh báo ASG Dưới Mức Tối thiểu
 
 ```hcl
 resource "aws_cloudwatch_metric_alarm" "asg_below_min" {
@@ -98,12 +98,12 @@ resource "aws_cloudwatch_metric_alarm" "asg_below_min" {
 }
 ```
 
-`treat_missing_data = "breaching"` — ngược lại với hai alarm trên. Nếu không thể lấy dữ liệu từ ASG, nghĩa là có vấn đề. Không giống ALB (không lưu lượng = bình thường), ASG (không dữ liệu = bản thân ASG có thể đã bị xóa hoặc hỏng).
+Cấu hình `treat_missing_data = "breaching"` — ngược lại với hai cảnh báo trên. Nếu không thể lấy dữ liệu từ ASG, hệ thống xác định có bất thường xảy ra (ASG có thể đã bị xóa hoặc gặp sự cố).
 
-#### Tại Sao Chọn Ba loại báo động Này?
+#### Ý nghĩa của ba cảnh báo chính
 
-- **ALB 5xx** — phát hiện lỗi ứng dụng, triển khai thất bại, phụ thuộc ngoài bị gián đoạn
-- **RDS CPU** — phát hiện vấn đề hiệu suất truy vấn, thiếu index, tăng đột biến lưu lượng
-- **ASG dưới mức tối thiểu** — phát hiện lỗi khởi chạy instance, AZ outage, giới hạn instance type
+- **ALB 5xx** — Phát hiện lỗi mã nguồn ứng dụng, thất bại khi triển khai code, hoặc dịch vụ phụ thuộc bị gián đoạn.
+- **RDS CPU** — Phát hiện hiệu năng truy vấn kém, thiếu chỉ mục (index), hoặc lưu lượng truy cập tăng đột biến.
+- **ASG below min** — Phát hiện lỗi khởi tạo máy chủ, gián đoạn tại một AZ, hoặc thiếu hụt dung lượng máy chủ.
 
-Mỗi alarm bao phủ một chế độ lỗi khác nhau. Kết hợp lại chúng cung cấp đủ tín hiệu để biết khi nào cần điều tra mà không tạo ra quá nhiều nhiễu.
+Mỗi cảnh báo bao phủ một dạng lỗi khác nhau. Kết hợp lại, ba cảnh báo cung cấp đủ tín hiệu để nhận biết khi nào cần điều tra sự cố mà không gây nhiễu.

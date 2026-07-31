@@ -42,4 +42,3 @@ To objectively reflect on my internship period, I would like to evaluate myself 
 * **Communication:** Sharpen the ability to present ideas clearly and concisely in team meetings; improve professional email writing and work reporting skills in English.
 * **Cloud & DevOps skills:** Increase hands-on practice with core AWS services (Lambda, DynamoDB, S3, CloudFront, WAF) and gain familiarity with CI/CD pipelines (GitHub Actions, AWS CodePipeline) and Infrastructure as Code (Terraform/CDK).
 * **Self-learning ability:** Build a more structured self-learning roadmap, combining theory (reading official documentation) with hands-on practice (labs, personal projects) to enhance knowledge retention.
-* Enhance technical writing skills for reports and knowledge-sharing blog posts

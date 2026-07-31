@@ -47,6 +47,10 @@ Ensure `VITE_API_BASE_URL` points to your **API Gateway HTTPS URL** (`https://<a
 
 #### Step 3: Triggering Deployments
 
+You can trigger deployments in two ways:
+
+##### Method A: Automatic via Git Push (Standard Workflow)
+
 Whenever you push new code to the `main` branch, GitHub Actions automatically starts the deployment workflow:
 
 ```bash
@@ -62,14 +66,37 @@ git push origin main
 
 ![workflow frontend](/images/5-Workshop/5.8/3.png)
 ![workflow backend](/images/5-Workshop/5.8/4.png)
+
+---
+
+##### Method B: Manual Trigger via GitHub UI (`workflow_dispatch`)
+
+You can also trigger a deployment manually at any time directly from the browser:
+
+1. Open the GitHub repository in your browser.
+2. Click the **Actions** tab at the top.
+3. Select the workflow from the left sidebar:
+   - For frontend: **Frontend Deploy to AWS Amplify**
+   - For backend: **Backend Deploy via S3 & ASG Rolling Refresh**
+4. Click the **Run workflow** button on the right.
+5. Select the **`main`** branch and click **Run workflow**.
+
 ---
 
 #### Step 4: Monitor Execution & Verify Deployment
 
 1. Click on the active workflow run in the **Actions** tab to view step-by-step execution logs in real time.
-2. Once the job turns green (✅ **Success**), test your application:
+2. Once the job turns green, test your application:
    - Open your frontend app: `https://main.<app-id>.amplifyapp.com`
    - Test API health: `curl -s https://<api-id>.execute-api.us-east-1.amazonaws.com/health`
 
 ![frontend UI](/images/5-Workshop/5.8/5.png)
 ![backend health](/images/5-Workshop/5.8/6.png)
+
+---
+
+#### Summary
+
+- **Automated Frontend Releases**: AWS Amplify builds and deploys updates automatically on every `git push`.
+- **Zero-Downtime Rolling Updates**: The ASG replaces backend servers smoothly without service interruption.
+- **Flexible Triggers**: Supports both automatic triggers via `push` and manual triggers via `workflow_dispatch`.

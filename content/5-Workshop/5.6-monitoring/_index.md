@@ -25,7 +25,7 @@ resource "aws_sns_topic" "alarms" {
 | `rds-cpu-high` | `CPUUtilization` | > 80% over 2 × 5-min periods | Assume database under pressure — needs scaling or query optimization |
 | `asg-below-min-size` | `GroupTotalInstances` | < 2 over 2 × 5-min periods | Instances failing to launch or being terminated |
 
-#### ALB 5xx
+#### 1. ALB 5xx Errors
 
 ```hcl
 resource "aws_cloudwatch_metric_alarm" "alb_5xx" {
@@ -50,7 +50,7 @@ resource "aws_cloudwatch_metric_alarm" "alb_5xx" {
 
 `treat_missing_data = "notBreaching"` — if the ALB has no traffic (and therefore no 5xx data points), it's not a problem. Only fire when we have data exceeding the threshold.
 
-#### RDS CPU
+#### 2. RDS CPU High
 
 ```hcl
 resource "aws_cloudwatch_metric_alarm" "rds_cpu" {
@@ -75,7 +75,7 @@ resource "aws_cloudwatch_metric_alarm" "rds_cpu" {
 
 80% CPU sustained over 10 minutes (2 × 5-min periods). At `db.t4g.micro` with 2 vCPUs, this means the database is CPU-bound. Response: scale up instance class or add a read replica.
 
-#### ASG Below Minimum
+#### 3. ASG Below Minimum Size
 
 ```hcl
 resource "aws_cloudwatch_metric_alarm" "asg_below_min" {

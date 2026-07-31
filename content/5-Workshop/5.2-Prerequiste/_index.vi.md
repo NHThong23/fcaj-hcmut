@@ -23,12 +23,12 @@ Nếu bất kỳ lệnh nào báo lỗi "command not found", hãy làm theo liê
 
 ##### 1. Tạo Access Keys
 
-1. Nhấp vào tên người dùng ở góc trên bên trái → chọn tab **Security credentials**.
-2. Cuộn xuống phần **Access keys** → nhấp **Create access key**.
+1. Nhấp vào tên người dùng ở góc trên bên trái $\rightarrow$ chọn tab **Security credentials**.
+2. Cuộn xuống phần **Access keys** $\rightarrow$ nhấp **Create access key**.
 
 ![](/images/5-Workshop/5.2/1.png)
 
-3. Chọn **Command Line Interface (CLI)** → tích chọn ô xác nhận → nhấp **Next**.
+3. Chọn **Command Line Interface (CLI)** $\rightarrow$ tích chọn ô xác nhận $\rightarrow$ nhấp **Next**.
 
 ![](/images/5-Workshop/5.2/2.png)
 
@@ -69,6 +69,12 @@ Default output format [None]: json
 #### Clone Repository
 
 ```bash
+# Mã nguồn Hạ tầng Terraform (IaC)
 git clone https://github.com/vinhnguyencong2005/TTNT-IaC
-cd TTNT-IaC
+
+# Mã nguồn ứng dụng Backend Node.js
+git clone https://github.com/vinhnguyencong2005/TTNT-backend
+
+# Mã nguồn ứng dụng Frontend React/Vite
+git clone https://github.com/vinhnguyencong2005/TTNT-frontend
 ```
