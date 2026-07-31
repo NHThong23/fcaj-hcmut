@@ -30,7 +30,7 @@ The company provides an internship allowance and offers flexible working hours w
 
 ### Additional Questions
 - What did you find **most satisfying** during your internship?
-  The thing I'm most satisfied with is that FCAJ is not just an internship — it's a community. I got to meet, connect with, and learn from friends from many different universities across Vietnam. That diversity of perspectives and the spirit of open sharing made my internship experience truly special.
++ The thing I'm most satisfied with is that FCAJ is not just an internship — it's a community. I got to meet, connect with, and learn from friends from many different universities across Vietnam. That diversity of perspectives and the spirit of open sharing made my internship experience truly special.
 
 - What do you think the company **should improve** for future interns?
 + Overall, the company has created excellent conditions for interns. However, I have a couple of small suggestions: setting up a free drinking water area so people can refill without having to remember to buy water. Additionally, opening the office on more days each week (instead of just 2–3 sessions) would give interns more time to work on-site, make better use of the facilities, and foster more interaction with the team.
